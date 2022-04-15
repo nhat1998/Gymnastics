@@ -1,0 +1,380 @@
+/* Heading */
+.heading {
+    height: var(--heading-height);
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.heading.active {
+    height: unset;
+}
+
+.heading__navbar {
+    height: 100%;
+}
+
+.navbar__icon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    height: var(--heading-height);
+    padding: 0 16px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar__icon:hover {
+    background-color: #ccc;
+}
+
+.navbar__icon:hover i {
+    color: #000;
+}
+
+.navbar__icon i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.navbar__list {
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.navbar__item-link {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left;
+    padding: 15px 24px;
+    text-transform: uppercase;
+}
+
+.navbar__item-link:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* Banner */
+.banner {
+    margin-top: var(--heading-height);
+    height: 600px;
+    background-image: url(../img/girl_ball.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner__slogan {
+    background-color: rgba(4,7,32,0.5);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__slogan-text {
+    color: #fff;
+    font-size: 7.6rem;
+    font-weight: 800;
+    text-shadow: 8px 10px 10px #000000;
+    padding: 90px 40px;
+    text-transform: uppercase;
+}
+
+/* About */
+#about {
+    height: 700px;
+    background-image: url(../img/girl_gymer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container__heading {
+    width: 80%;
+    margin: auto;
+    background-color: transparent;
+}
+
+.container__heading-title {
+    color: #fff;
+    font-size: 4.8rem;
+    font-weight: 600;
+    padding: 60px 10px;
+    line-height: 7.5rem;
+    text-transform: uppercase;
+}
+
+.about__info {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+}
+
+.about__info-box {
+    width: 500px;
+    background-color: rgb(16, 19, 47);
+}
+
+.about__info-content {
+    color: #fff;
+    padding: 30px;
+}
+
+.info__name, 
+.info__position {
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 6rem;
+}
+
+.info__name {
+    margin-top: 16px;
+}
+
+.info__position {
+    margin-bottom: 10px;
+}
+
+.info__quote {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.info__social-text {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+
+.info__social {
+    margin-top: 16px;
+    display: flex;
+}
+
+.info__social a {
+    text-decoration: none;
+    display: block;
+    margin-right: 4px;
+    padding-right: 4px;
+}
+
+.info__social i {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.info__social a:hover {
+    opacity: 0.6;
+}
+
+/* Service */
+.service-container {
+    background-color: #000;
+    padding-bottom: 100px;
+}
+
+.service__options {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.service__item {
+    width: 300px;
+    margin-top: 50px;
+}
+
+.service__item-img {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.service__item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease 0.3s;
+}
+
+.service__item:hover .service__item-img img {
+    transform: scale(1.2);
+}
+
+.service__item-info {
+    color: #fff;
+}
+
+.service__item-info-name {
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 3rem;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.service__item-info-cost {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin-bottom: 16px;
+}
+
+/* Testimony */
+.testimony-container {
+    background-color: #0a0c0f;
+    padding-bottom: 140px;
+}
+
+.testimony__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.testimony__img {
+    width: 380px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.testimony__comment {
+    width: 40%;
+    color: #fff;
+}
+
+.testimony__comment-name {
+    font-size: 3.8rem;
+    line-height: 4.8rem;
+    font-weight: 600;
+    margin: 12px 0;
+}
+
+.testimony__comment-text {
+    font-size: 1.6rem;
+    font-style: italic;
+    line-height: 2.4rem;
+}
+
+/* Join section */
+.join-container {
+    background-color: #242526;
+    padding-bottom: 140px;
+}
+
+.join-content {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.join__form-box {
+    width: 500px;
+    padding: 30px;
+    background-color: #eee;
+}
+
+.join__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input__name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid;
+    border-radius: 5px;
+    height: 45px;
+    font-size: 1.6rem;
+}
+
+.input:focus {
+    outline: 1.5px solid gray;
+}
+
+.input__name-list {
+    width: 48%;
+}
+
+textarea {
+    height: 70px !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.join__img-wrap {
+    width: 500px;
+}
+
+.join__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.submit-btn {
+    margin-top: 10px;
+}
+
+/* Contact */
+.contact-container {
+    background-color: #0a0c0f;
+    padding-bottom: 140px;
+}
+
+.contact__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contact__item {
+    margin: 20px 0;
+}
+
+.contact__title {
+    color: #fff;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.contact__text {
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+}
+
+.contact__phone {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.contact__icon {
+    color: #fff;
+    font-size: 2rem;
+    margin-right: 8px;
+}
